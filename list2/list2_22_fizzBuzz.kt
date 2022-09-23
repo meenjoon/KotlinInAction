@@ -3,7 +3,8 @@ package list2
 class list2_22_fizzBuzz {
 }
 
-fun fizzBuzz(i:Int) = when{
+fun fizzBuzz(i:Int) =
+    when {
     i % 15 == 0 -> "FizzBuzz "
     i % 3 == 0 -> "Fizz "
     i % 5 == 0 -> "Buzz"
