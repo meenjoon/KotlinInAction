@@ -24,19 +24,15 @@ data class SampleClass(var id: Int, var list: MutableList<Int>, var name: String
 }
 
 fun main(args: Array<String>){
-    val processed = hashSetOf(Client3("오현석",4122))
-    println(processed.contains(Client3("오현석",4122)))
-//    println(processed.hashCode())
-//    print(Client3("오현석",4122).hashCode())
 
     val instance1 = SampleClass(1, mutableListOf(1, 2, 3), "빈지노")
     val instance2 = instance1.deepCopy()
 
     instance1.id = 3
-    instance1.list.add(3)
+    instance1.list.add(4)
     instance1.name = "창모"
 
     println(instance2.id) // 깊은 복사라면 1 나와야함
-    println(instance2.list) // 깊은 복사라면 [1, 2] 나와야함
+    println(instance2.list) // 깊은 복사라면 [1, 2, 3] 나와야함
     println(instance2.name) // 깊은 복사라면 "빈지노" 나와야함
 }
