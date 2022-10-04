@@ -17,7 +17,9 @@ fun main(args: Array<String>){
 
     var cc = people.filter { it.age == people.maxBy(Person::age)!!.age }
     val maxAge = people.maxBy(Person::age)!!.age
+    val maxAge2 = people.maxBy(Person::age)
     people.filter { it.age==maxAge }
+    println(maxAge2.age)
 
     val numbers = mapOf(0 to "zero", 1 to "one")
     println(numbers.mapValues { it.value.toUpperCase() })

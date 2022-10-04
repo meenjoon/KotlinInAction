@@ -14,6 +14,7 @@ fun findTheOldest(people: List<Person>) {
 }
 fun main(args: Array<String>) {
     val people2 = listOf(Person("Alice", 29), Person("Bob", 31))
+    var aaa = people2.joinToString(" " ){it.name}
     var list = listOf(1, 2, 3)
     println(list.maxBy { it })
     println(people2.maxBy { it.age })
