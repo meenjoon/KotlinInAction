@@ -4,6 +4,7 @@ import java.io.BufferedReader
 import java.io.StringReader
 
 fun addValidNumbers(numbers: List<Int?>){
+
     var SumOfValidNubers = 0
     var invalidNumbers = 0
     for(number in numbers) { //리스트에서 널이 될 수 있는 값을 읽는다.
